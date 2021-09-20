@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="Jra-6L-r2K">
+            <objects>
+                <viewController storyboardIdentifier="HomeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9o3-sK-5Gp" customClass="HomeViewController" customModule="CleanCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tX7-kM-9qj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GitHub" translatesAutoresizingMaskIntoConstraints="NO" id="pqD-wb-feK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CleanCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKZ-m0-Cyh">
+                                <rect key="frame" x="117" y="141" width="180" height="42"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="36"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="UKu-oq-3PP">
+                                <rect key="frame" x="20" y="243" width="374" height="170"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxu-8l-hXK">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="170"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ElQ-6C-KAJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="175" height="170"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repositórios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2Q-hI-65y">
+                                                    <rect key="frame" x="39.5" y="75" width="96" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
+                                                    <color key="textColor" name="Black"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="u2Q-hI-65y" firstAttribute="centerX" secondItem="ElQ-6C-KAJ" secondAttribute="centerX" id="9gk-n6-AbW"/>
+                                                <constraint firstItem="u2Q-hI-65y" firstAttribute="centerY" secondItem="ElQ-6C-KAJ" secondAttribute="centerY" id="H2L-w3-Wgq"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="regular"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </visualEffectView>
+                                    <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fam-S3-kvT">
+                                        <rect key="frame" x="199" y="0.0" width="175" height="170"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7JO-PT-jWv">
+                                            <rect key="frame" x="0.0" y="0.0" width="175" height="170"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seguidores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKK-CI-9iQ">
+                                                    <rect key="frame" x="44.5" y="75" width="86" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
+                                                    <color key="textColor" name="Black"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="CKK-CI-9iQ" firstAttribute="centerX" secondItem="7JO-PT-jWv" secondAttribute="centerX" id="kVc-eC-9sY"/>
+                                                <constraint firstItem="CKK-CI-9iQ" firstAttribute="centerY" secondItem="7JO-PT-jWv" secondAttribute="centerY" id="vm2-fl-w4x"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="regular"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </visualEffectView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="nZr-qJ-Txq"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFl-Pu-31w">
+                                <rect key="frame" x="18" y="42" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="g8a-Do-6rs"/>
+                                    <constraint firstAttribute="height" constant="55" id="rni-9R-bkk"/>
+                                </constraints>
+                                <state key="normal" image="Logout">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOut:" destination="9o3-sK-5Gp" eventType="touchUpInside" id="3rF-oD-iQR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Uz6-CH-WdI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SKZ-m0-Cyh" firstAttribute="top" secondItem="EFl-Pu-31w" secondAttribute="bottom" constant="44" id="1v4-KC-TD7"/>
+                            <constraint firstAttribute="bottom" secondItem="pqD-wb-feK" secondAttribute="bottom" id="3p8-Nv-mF1"/>
+                            <constraint firstItem="UKu-oq-3PP" firstAttribute="leading" secondItem="Uz6-CH-WdI" secondAttribute="leading" constant="20" id="6f6-5m-aE9"/>
+                            <constraint firstItem="pqD-wb-feK" firstAttribute="top" secondItem="tX7-kM-9qj" secondAttribute="top" id="7ij-o0-XGh"/>
+                            <constraint firstItem="SKZ-m0-Cyh" firstAttribute="centerX" secondItem="tX7-kM-9qj" secondAttribute="centerX" id="9x1-uV-H2h"/>
+                            <constraint firstItem="EFl-Pu-31w" firstAttribute="top" secondItem="tX7-kM-9qj" secondAttribute="top" constant="42" id="EVm-PF-AqM"/>
+                            <constraint firstItem="Uz6-CH-WdI" firstAttribute="trailing" secondItem="UKu-oq-3PP" secondAttribute="trailing" constant="20" id="SzD-F3-8RP"/>
+                            <constraint firstItem="pqD-wb-feK" firstAttribute="leading" secondItem="Uz6-CH-WdI" secondAttribute="leading" id="Vlf-tX-N6A"/>
+                            <constraint firstItem="EFl-Pu-31w" firstAttribute="leading" secondItem="Uz6-CH-WdI" secondAttribute="leading" constant="18" id="kji-2o-Oh9"/>
+                            <constraint firstItem="Uz6-CH-WdI" firstAttribute="trailing" secondItem="pqD-wb-feK" secondAttribute="trailing" id="qoV-Wu-Jsg"/>
+                            <constraint firstItem="UKu-oq-3PP" firstAttribute="top" secondItem="SKZ-m0-Cyh" secondAttribute="bottom" constant="60" id="ubj-Ll-9SY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="vwFollowersCard" destination="7JO-PT-jWv" id="u3E-g6-ICv"/>
+                        <outlet property="vwRepoCard" destination="ElQ-6C-KAJ" id="eLs-9f-MUh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7R-Jx-pIJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-865.21739130434787" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GitHub" width="333.33334350585938" height="222.33332824707031"/>
+        <image name="Logout" width="23" height="20"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
