@@ -1,3 +1,12 @@
+# Clean Code Swift
+
+O objetivo desse repositório é servir como modelo de uma arquitetura de código limpo, e servir como base para projetos futuros.
+A motivação desse projeto e desse estudo foi uma iniciativa de meu Tech Lead [AlbertoLourenco](https://github.com/AlbertoLourenco/)
+juntamente com a empresa na qual trabalhamos [MadeInWeb e Mobile](https://www.madeinweb.com.br/).
+
+Esse projeto seguirá melhorando em sua construção sempre tentando aplicar os conceitos aprendidos com o livro.
+
+
 # 1 - O que é código limpo
 
 
