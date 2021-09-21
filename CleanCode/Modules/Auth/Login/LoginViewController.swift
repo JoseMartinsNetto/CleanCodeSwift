@@ -6,7 +6,7 @@
 
 import UIKit
 
-class LoginViewController: BaseViewController,
+final class LoginViewController: BaseViewController,
                            LoginPresenterDelegate {
     
     var presenter: LoginPresenter!

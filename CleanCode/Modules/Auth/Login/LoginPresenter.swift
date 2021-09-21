@@ -16,7 +16,7 @@ protocol LoginPresenterDelegate: BasePresenterDelegate { }
 //  MARK: - Presenter
 //-----------------------------------------------------------------------
 
-class LoginPresenter: BasePresenter<LoginRouter, LoginManager, LoginViewController> {
+final class LoginPresenter: BasePresenter<LoginRouter, LoginManager, LoginViewController> {
     
     var delegate: LoginPresenterDelegate
     

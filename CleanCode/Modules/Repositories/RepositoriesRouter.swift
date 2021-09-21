@@ -6,7 +6,7 @@
 
 import UIKit
 
-class RepositoriesRouter: BaseRouter<RepositoriesViewController> {
+final class RepositoriesRouter: BaseRouter<RepositoriesViewController> {
     
     private let storyboard = UIStoryboard(name: "Repositories", bundle: nil)
     

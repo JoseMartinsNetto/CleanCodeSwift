@@ -18,9 +18,9 @@ protocol HomePresenterDelegate: BasePresenterDelegate {
 //  MARK: - Presenter
 //-----------------------------------------------------------------------
 
-class HomePresenter: BasePresenter<HomeRouter, HomeManager, HomeViewController> {
+final class HomePresenter: BasePresenter<HomeRouter, HomeManager, HomeViewController> {
     
-    var delegate: HomePresenterDelegate
+    private var delegate: HomePresenterDelegate
     
     init (delegate: HomePresenterDelegate, router: HomeRouter, manager: HomeManager) {
         self.delegate = delegate

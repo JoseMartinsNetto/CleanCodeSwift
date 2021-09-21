@@ -6,7 +6,7 @@
 
 import Foundation
 
-class RepositoriesManager: BaseManager {
+final class RepositoriesManager: BaseManager {
     func loadData(gitHubUser: String, completion: @escaping (_ response: [Repository]?, _ error: APIResponseError?) -> Void) {
         let endpoint = Constants.API.Endpoint.Repos.replacingOccurrences(of: "{userName}", with: gitHubUser)
         

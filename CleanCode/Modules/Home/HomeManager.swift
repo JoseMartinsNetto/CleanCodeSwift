@@ -6,4 +6,4 @@
 
 import Foundation
 
-class HomeManager: BaseManager{}
+final class HomeManager: BaseManager{}

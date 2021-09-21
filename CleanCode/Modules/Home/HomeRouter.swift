@@ -6,9 +6,9 @@
 
 import UIKit
 
-class HomeRouter: BaseRouter<HomeViewController> {
+final class HomeRouter: BaseRouter<HomeViewController> {
     
-    let storyboard = UIStoryboard(name: "Home", bundle: nil)
+    private let storyboard = UIStoryboard(name: "Home", bundle: nil)
     
     override init() {
         super.init()

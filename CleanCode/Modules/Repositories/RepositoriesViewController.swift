@@ -55,7 +55,7 @@ final class RepositoriesViewController: BaseViewController,
     
     // MARK: - Custom Methods
     
-    @IBAction func closeview(_ sender: Any) {
+    @IBAction private func closeview(_ sender: Any) {
         presenter.closeView()
     }
 }

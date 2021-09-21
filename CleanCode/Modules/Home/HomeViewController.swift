@@ -6,7 +6,7 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController,
+final class HomeViewController: BaseViewController,
                           HomePresenterDelegate {
     
     var presenter: HomePresenter!
@@ -36,7 +36,7 @@ class HomeViewController: BaseViewController,
     //  MARK: - Custom methods
     //-----------------------------------------------------------------------
     
-    func setupGuestures() {
+    private func setupGuestures() {
         let tapOnRepositories = UITapGestureRecognizer(target: self, action: #selector(handleTapOnRepositories))
         let tapOnFollowers = UITapGestureRecognizer(target: self, action: #selector(handleTapOnFollowers))
         
@@ -44,7 +44,7 @@ class HomeViewController: BaseViewController,
         vwFollowersCard.addGestureRecognizer(tapOnFollowers)
     }
     
-    @objc func handleTapOnRepositories(_ gesture: UITapGestureRecognizer) {
+    @objc private func handleTapOnRepositories(_ gesture: UITapGestureRecognizer) {
         if let currentView = gesture.view {
             AnimationsUtils.makeRippleEffect(
                 to: currentView,
@@ -55,7 +55,7 @@ class HomeViewController: BaseViewController,
         }
     }
     
-    @objc func handleTapOnFollowers(_ gesture: UITapGestureRecognizer) {
+    @objc private func handleTapOnFollowers(_ gesture: UITapGestureRecognizer) {
         if let currentView = gesture.view {
             AnimationsUtils.makeRippleEffect(
                 to: currentView,
@@ -66,9 +66,8 @@ class HomeViewController: BaseViewController,
         }
     }
     
-    @IBAction func logOut(_ sender: Any) {
+    @IBAction private func logOut(_ sender: Any) {
         presenter.logOut()
     }
-    
  }
  

@@ -14,9 +14,9 @@ protocol RepositoriesPresenterDelegate: BasePresenterDelegate {
 
 //  MARK: - Presenter
 
-class RepositoriesPresenter: BasePresenter< RepositoriesRouter, RepositoriesManager, RepositoriesViewController> {
+final class RepositoriesPresenter: BasePresenter< RepositoriesRouter, RepositoriesManager, RepositoriesViewController> {
     
-    var delegate: RepositoriesPresenterDelegate
+    private var delegate: RepositoriesPresenterDelegate
     
     private(set) var repositories: [Repository] = []
     

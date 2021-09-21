@@ -46,7 +46,13 @@ class BaseViewController: UIViewController,
         AlertHelper.showAlert(message: message, type: type)
     }
     
-    func loading(_ loading: Bool) { }
+    func loading(_ loading: Bool) {
+        if loading {
+            AnimationsUtils.loading(true)
+        } else {
+            AnimationsUtils.loading(false)
+        }
+    }
     
     
 }

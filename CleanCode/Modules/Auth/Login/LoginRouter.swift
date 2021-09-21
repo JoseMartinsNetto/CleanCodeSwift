@@ -8,7 +8,7 @@ import UIKit
 
 class LoginRouter: BaseRouter<LoginViewController> {
     
-    let storyboard = UIStoryboard(name: "Login", bundle: nil)
+    private let storyboard = UIStoryboard(name: "Login", bundle: nil)
     
     override init() {
         super.init()

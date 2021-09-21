@@ -49,6 +49,7 @@
 		82DFBDCC26F911240015EA2F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DFBDC926F911240015EA2F /* User.swift */; };
 		82DFBDCD26F911240015EA2F /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DFBDCA26F911240015EA2F /* Follower.swift */; };
 		82DFBDCF26F92BE20015EA2F /* Repositories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DFBDCE26F92BE20015EA2F /* Repositories.storyboard */; };
+		82DFBDD226F95D890015EA2F /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 82DFBDD126F95D890015EA2F /* loading.json */; };
 		8BEDC89C0026A9D14426F063 /* Pods_CleanCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF2198010F8AE264C192734 /* Pods_CleanCode.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +102,7 @@
 		82DFBDC926F911240015EA2F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		82DFBDCA26F911240015EA2F /* Follower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		82DFBDCE26F92BE20015EA2F /* Repositories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Repositories.storyboard; sourceTree = "<group>"; };
+		82DFBDD126F95D890015EA2F /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 		82DFBD7626F8E6A20015EA2F /* LottieAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				82DFBDD126F95D890015EA2F /* loading.json */,
 			);
 			path = LottieAnimations;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			files = (
 				82DFBDAC26F8EE520015EA2F /* Login.storyboard in Resources */,
 				82DFBDBB26F8EE520015EA2F /* Home.storyboard in Resources */,
+				82DFBDD226F95D890015EA2F /* loading.json in Resources */,
 				82DFBDCF26F92BE20015EA2F /* Repositories.storyboard in Resources */,
 				82DFBD6926F8E53F0015EA2F /* LaunchScreen.storyboard in Resources */,
 				82DFBD6626F8E53F0015EA2F /* Assets.xcassets in Resources */,
